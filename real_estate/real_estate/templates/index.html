@@ -1,0 +1,29 @@
+<h1 style="text-align: center;">Hops Real Estate</h1>
+<h3 style="text-align: center;">We value your property</h3> 
+
+<div style="width: auto; text-align: center;">
+    <div style="display: inline-block;">
+        <img src="https://www.jllsweden.se/images/global/technology-driving-transparency-800x450.jpg.rendition/cq5dam.web.1280.1280.jpeg" style="width: 800px;"/>
+    </div>
+    <div style="display: inline-block; width:auto;">
+        <form action="{{ url_for('value') }}" method="post">
+            <table>
+                <tr><th>Building class:</th><th><input type="text" value="10" name="building_class"></th></tr>
+                <tr><th>School district:</th><th> <input type="text" value="20" name="school_dist"></th></tr>
+                <tr><th>Health area:</th><th> <input type="text" value="7600" name="health_area"></th></tr>
+                <tr><th>Police precint: </th><th><input type="text" value="68" name="police_prct"></th></tr>
+                <tr><th>Owner type: </th><th><input type="text" value="P" name="owner_type"></th></tr>
+                <tr><th>Number of units:</th><th> <input type="text" value="98" name="number_of_units"></th></tr>
+                <tr><th>Age at sale:</th><th> <input type="text" value="0" name="age_at_sale"></th></tr>
+                <tr><th>Garage area:</th><th> <input type="text" value="123" name="garage_area"></th></tr>
+                <tr><th>Residential area:</th><th> <input type="text" value="300" name="res_area"></th></tr>
+                <tr><th></th><th><input type="submit" value="Submit"></th></tr>
+            </table>
+        </form>
+    </div>
+</div>
+
+<div style="text-align: center; margin-top: 20px; font-size: 30px;">
+    {{ value }}
+</div>
+
